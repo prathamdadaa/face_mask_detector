@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0f172a;
+    color: #f8fafc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    text-align: center;
+    width: 90%;
+    max-width: 800px;
+}
+
+header {
+    margin-bottom: 24px;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #38bdf8;
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #94a3b8;
+}
+
+.card {
+    background: #1e293b;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.status-indicator {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 12px;
+}
+
+.badge {
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.badge.active {
+    background-color: #065f46;
+    color: #34d399;
+}
+
+.badge.inactive {
+    background-color: #7f1d1d;
+    color: #fca5a5;
+}
+
+.stream-wrapper {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+    border: 2px solid #334155;
+    background-color: #000;
+}
+
+.stream-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.controls {
+    margin-top: 16px;
+}
+
+button {
+    background-color: #0284c7;
+    color: white;
+    border: none;
+    padding: 10px 24px;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+button:hover {
+    background-color: #0369a1;
+}
