@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Face Mask Detection</title>
+    
+    <!-- CSS File Link (Flask static loader) -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>😷 Face Mask Detection System</h1>
+            <p>Real-time computer vision detection using Python & OpenCV</p>
+        </header>
+
+        <main class="video-container">
+            <div class="card">
+                <div class="status-indicator">
+                    <span id="live-badge" class="badge active">● Live Stream</span>
+                </div>
+                <div class="stream-wrapper">
+                    <img id="video-stream" src="{{ url_for('video_feed') }}" alt="Webcam Stream Loading...">
+                </div>
+                <div class="controls">
+                    <button id="toggle-btn" onclick="toggleStream()">Pause Stream</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- JS File Link (Flask static loader) -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
